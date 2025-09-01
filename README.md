@@ -70,8 +70,8 @@ Five main tables:
 	•	Test whether warranty costs threaten profitability in the long term
 
 ## Methodology
-   •	SQL: CTEs, Window functions, CASE logic, correlation analysis
-	•	Visualization: Tableau / Power BI dashboards
-	•	Analysis: Year-over-year growth, claim probability, price-claim correlation
+   •	SQL: CTEs, Window functions, CASE logic, correlation analysis  
+	•	Visualization: Tableau dashboards  
+	•	Analysis: Year-over-year growth, claim probability, price-claim correlation  
 
 ## Key findings
