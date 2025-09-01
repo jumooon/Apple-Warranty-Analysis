@@ -11,3 +11,6 @@ To explore this question, I analyze a dataset labeled as Apple sales and warrant
 ⚠️ The authenticity of this dataset as official Apple data has not been independently verified, and it should be treated as Apple-inspired data for analytical purposes.
 
 The analysis simulates a real-world scenario to evaluate whether revenue growth is sufficient to absorb increasing warranty costs, drawing lessons from Apple’s customer-focused after-sales strategy.
+
+## Entity Relationship Diagram (ERD)
+![ERD](https://github.com/jumooon/apple_sales_analysis/blob/main/erd.png)
