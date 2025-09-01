@@ -7,7 +7,7 @@ Apple has built a reputation for offering generous repair and replacement servic
 
 “Can strong sales growth sustainably offset the rising costs of warranty and replacement services?”
 
-To explore this question, we analyze a dataset labeled as Apple sales and warranty data, obtained from a public source.  
+To explore this question, I analyze a dataset labeled as Apple sales and warranty data, obtained from a public source.  
 ⚠️ The authenticity of this dataset as official Apple data has not been independently verified, and it should be treated as Apple-inspired data for analytical purposes.
 
 The analysis simulates a real-world scenario to evaluate whether revenue growth is sufficient to absorb increasing warranty costs, drawing lessons from Apple’s customer-focused after-sales strategy.
