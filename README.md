@@ -50,25 +50,20 @@ Five main tables:
    - `repair_status` : Status of the warranty claim (e.g., Paid Repaired, Warranty Void).
 
 ## Objectives
-1.	Revenue Growth Analysis
-	•	Measure store and country level sales volume
-	•	Compute year over year growth rates
-	•	Visualize monthly running totals
 
-3.	Warranty Cost Analysis
-	•	Track annual claim volumes
-	•	Assess ratios of “Paid Repaired” vs “Warranty Void”
-	•	Evaluate claim rates across product lifecycle stages
+1.	Measure the Core Risk Metric  
+	•	Calculate Claim Probability (%) = (Number of warranty claims ÷ Units sold) × 100.  
+	•	Track how this metric changes over time (YoY growth comparison between sales and claims).
 
-5.	Sales vs Warranty Risk
-	•	Calculate probability of claims per unit sold
-	•	Identify high-risk stores/countries
-	•	Explore correlation between product price and claim frequency
+2.	Identify Adjustment Factors (Supporting Analyses)  
+	•	By Region/Store: Detect whether warranty claims are concentrated in specific markets.  
+	•	By Product Lifecycle: Examine claim rates in different phases (0–6 months, 6–12, 12–18, 18+).  
+	•	By Price Segment: Analyze the correlation between product price and claim frequency.  
+	•	By Claim Type: Differentiate between “Paid Repaired” vs “Warranty Void” to assess actual cost impact.
 
-7.	Growth Comparison
-	•	Compare sales growth vs warranty growth rates
-	•	Test whether warranty costs threaten profitability in the long term
-
+3.	Business Insight
+	•	Determine whether revenue growth is sufficient to absorb warranty-related costs.  
+	•	Provide actionable recommendations for quality improvement, warranty strategy, and regional risk management.  
 ## Methodology
    •	SQL: CTEs, Window functions, CASE logic, correlation analysis  
 	•	Visualization: Tableau dashboards  
