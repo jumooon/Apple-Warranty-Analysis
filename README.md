@@ -61,9 +61,10 @@ Five main tables:
 	•	By Price Segment: Analyze the correlation between product price and claim frequency.  
 	•	By Claim Type: Differentiate between “Paid Repaired” vs “Warranty Void” to assess actual cost impact.
 
-3.	Business Insight
+3.	Business Insight  
 	•	Determine whether revenue growth is sufficient to absorb warranty-related costs.  
-	•	Provide actionable recommendations for quality improvement, warranty strategy, and regional risk management.  
+	•	Provide actionable recommendations for quality improvement, warranty strategy, and regional risk management.
+
 ## Methodology
    •	SQL: CTEs, Window functions, CASE logic, correlation analysis  
 	•	Visualization: Tableau dashboards  
