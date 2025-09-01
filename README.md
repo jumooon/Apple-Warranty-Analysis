@@ -15,7 +15,7 @@ The analysis simulates a real-world scenario to evaluate whether revenue growth 
 ## Entity Relationship Diagram (ERD)
 ![ERD](https://github.com/jumooon/apple_sales_analysis/blob/main/erd.png)
 
-##Schema
+## Schema
 
 Five main tables:
 
