@@ -48,3 +48,30 @@ Five main tables:
    - `claim_date` : Date when the claim was filed.
    - `sale_id` : References the sale table.
    - `repair_status` : Status of the warranty claim (e.g., Paid Repaired, Warranty Void).
+
+## Objectives
+1.	Revenue Growth Analysis
+	•	Measure store and country level sales volume
+	•	Compute year over year growth rates
+	•	Visualize monthly running totals
+
+3.	Warranty Cost Analysis
+	•	Track annual claim volumes
+	•	Assess ratios of “Paid Repaired” vs “Warranty Void”
+	•	Evaluate claim rates across product lifecycle stages
+
+5.	Sales vs Warranty Risk
+	•	Calculate probability of claims per unit sold
+	•	Identify high-risk stores/countries
+	•	Explore correlation between product price and claim frequency
+
+7.	Growth Comparison
+	•	Compare sales growth vs warranty growth rates
+	•	Test whether warranty costs threaten profitability in the long term
+
+## Methodology
+   •	SQL: CTEs, Window functions, CASE logic, correlation analysis
+	•	Visualization: Tableau / Power BI dashboards
+	•	Analysis: Year-over-year growth, claim probability, price-claim correlation
+
+## Key findings
