@@ -1,16 +1,22 @@
-# Sales Growth vs Warranty Costs: Apple’s After-Sales Case
+# Apple Refurb Stock Forecasting to Minimize Customer Wait Times
 ![apple logo](https://github.com/jumooon/apple_sales_analysis/blob/main/Apple_Changsha_RetailTeamMembers_09012021_big.jpg.slideshow-xlarge_2x.jpg)
 ## Project overview
 
-This project is inspired by Apple’s renowned replacement and warranty policy.
-Apple has built a reputation for offering generous repair and replacement services, often providing refurbished devices with minimal friction for the customer. While this strengthens brand loyalty and customer satisfaction, it also raises a key business question:
+Apple’s strong warranty and replacement policies boost customer trust but also create operational challenges. When claims surge for specific products or regions, customers often face long wait times due to limited refurb stock on hand.  
 
-“Can strong sales growth sustainably offset the rising costs of warranty and replacement services?”
+This project asks:  
+“Can we forecast refurb demand in advance so stores pre-stock the right devices and minimize customer wait times?”  
 
-To explore this question, I analyze a dataset labeled as Apple sales and warranty data, obtained from a public source.  
-⚠️ The authenticity of this dataset as official Apple data has not been independently verified, and it should be treated as Apple-inspired data for analytical purposes.
+To answer this, we:  
+	•	Analyze hotspots (stores/products with unusually high claim probabilities).  
+	•	Model demand using two approaches:  
+	•	MVP (Moving Average Forecast) – short-term, data-driven trend detection.  
+	•	PRO (Lifecycle Hazard Model) – product age-based risk modeling.  
+	•	Blend forecasts to generate a store×product refurb stocking plan.  
+	•	Prioritize urgent stores/products so inventory can be allocated before shortages occur.  
 
-The analysis simulates a real-world scenario to evaluate whether revenue growth is sufficient to absorb increasing warranty costs, drawing lessons from Apple’s customer-focused after-sales strategy.
+Impact:  
+This enables Apple to reduce repair/replacement wait times, optimize refurb logistics, and improve the warranty experience.  
 
 ## Entity Relationship Diagram (ERD)
 ![ERD](https://github.com/jumooon/apple_sales_analysis/blob/main/erd.png)
