@@ -1,0 +1,89 @@
+## Five main tables:
+
+1. **stores**: Contains information about Apple retail stores.
+   - `store_id` : Unique identifier for each store.
+   - `store_name` : Name of the store.
+   - `city` : City where the store is located.
+   - `country` : Country of the store.
+
+2. **category**: Holds product category information.
+   - `category_id` : Unique identifier for each product category.
+   - `category_name` : Name of the category.
+
+3. **products**: Details about Apple products.
+   - `product_id` : Unique identifier for each product.
+   - `product_name` : Name of the product.
+   - `category_id` : References the category table.
+   - `launch_date` : Date when the product was launched.
+   - `price` : Price of the product.
+
+4. **sales**: Stores sales transactions.
+   - `sale_id` : Unique identifier for each sale.
+   - `sale_date` : Date of the sale.
+   - `store_id` : References the store table.
+   - `product_id` : References the product table.
+   - `quantity` : Number of units sold.
+
+5. **warranty**: Stores warranty claim information.
+   - `claim_id` : Unique identifier for each claim.
+   - `claim_date` : Date when the claim was filed.
+   - `sale_id` : References the sale table.
+   - `repair_status` : Status of the warranty claim (e.g., Paid Repaired, Warranty Void).
+
+## Schema
+
+-- DROP TABLE command
+
+```sql
+DROP TABLE IF EXISTS warranty;
+DROP TABLE IF EXISTS sales;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS category;
+DROP TABLE IF EXISTS stores;
+-- CREATE TABLE commands
+
+CREATE TABLE stores(
+store_id VARCHAR(5) PRIMARY KEY,
+store_name	VARCHAR(30),
+city	VARCHAR(25),
+country VARCHAR(25)
+);
+
+DROP TABLE IF EXISTS category;
+CREATE TABLE category
+(category_id VARCHAR(10) PRIMARY KEY,
+category_name VARCHAR(20)
+);
+
+CREATE TABLE products
+(
+product_id	VARCHAR(10) PRIMARY KEY,
+product_name	VARCHAR(35),
+category_id	VARCHAR(10),
+launch_date	date,
+price FLOAT,
+CONSTRAINT fk_category FOREIGN KEY (category_id) REFERENCES category(category_id)
+);
+
+CREATE TABLE sales
+(
+sale_id	VARCHAR(15) PRIMARY KEY,
+sale_date	DATE,
+store_id	VARCHAR(10), -- this fk
+product_id	VARCHAR(10), -- this fk
+quantity INT,
+CONSTRAINT fk_store FOREIGN KEY (store_id) REFERENCES stores(store_id),
+CONSTRAINT fk_product FOREIGN KEY (product_id) REFERENCES products(product_id)
+);
+
+CREATE TABLE warranty
+(
+claim_id VARCHAR(10) PRIMARY KEY,	
+claim_date	date,
+sale_id	VARCHAR(15),
+repair_status VARCHAR(15),
+CONSTRAINT fk_orders FOREIGN KEY (sale_id) REFERENCES sales(sale_id)
+);
+
+-- Success Message
+SELECT 'Schema created successful' as Success_Message;
